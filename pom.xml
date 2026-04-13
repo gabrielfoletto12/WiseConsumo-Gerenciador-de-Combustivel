@@ -6,7 +6,8 @@
 
     <groupId>com.wiseconsumo</groupId>
     <artifactId>wise-consumo-cli</artifactId>
-    <version>0.2.0-SNAPSHOT</version>
+
+    <version>1.0.0</version>
 
     <properties>
         <maven.compiler.source>26</maven.compiler.source>
@@ -39,6 +40,12 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.4.0</version>
                 <configuration>
@@ -54,7 +61,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
-                    <mainClass>com.gestorconsumo.Main</mainClass>
+                    <mainClass>com.wiseconsumo.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
